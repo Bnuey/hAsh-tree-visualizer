@@ -4,10 +4,10 @@ const HashNode = preload("res://addons/hash_tree_visualizer/hash_tree_node.gd")
 const VISUAL_NODE_SCENE: PackedScene = preload("uid://blfuajfq0tuk3")
 const CIRCLE_TEXTURE: Texture = preload("uid://daem04r486sax")
 
-const color_node: Color = Color.WHITE
-const COLOR_3D: Color = "#FF5555FF"
-const COLOR_2D: Color = "#6393FFFF"
-const COLOR_CONTROL: Color = "#6AFF7CFF"
+const color_node: Color = "#659AA1"
+const COLOR_3D: Color = "#fe8686"
+const COLOR_2D: Color = "#257BA2"
+const COLOR_CONTROL: Color = "#37d282"
 
 
 
@@ -22,7 +22,7 @@ static func new_visual(node: Node, depth: int) -> HashNode:
 	
 	instance.label.text = node.name
 	
-	instance.get_node("%Circle").modulate = instance._get_color_for_node(node)
+	instance.modulate = instance._get_color_for_node(node)
 	return instance
 	
 func _get_color_for_node(node: Node) -> Color:

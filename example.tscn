@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://crsr6kvtstkh8"]
+
+[ext_resource type="Script" uid="uid://d2fmqwwjd2moi" path="res://addons/hash_tree_visualizer/hash_tree_visualizer.gd" id="1_nenhk"]
+
+[node name="GunBase" type="Node3D" unique_id=1030348320]
+
+[node name="Visuals" type="Node3D" parent="." unique_id=817568174]
+
+[node name="Collision" type="Node3D" parent="." unique_id=1355044254]
+
+[node name="Management" type="Node" parent="." unique_id=1269561067]
+
+[node name="StatComponent" type="Node" parent="Management" unique_id=1496095999]
+
+[node name="HealthComponent" type="Node" parent="Management" unique_id=223633152]
+
+[node name="MoveComponent" type="Node" parent="Management" unique_id=863267196]
+
+[node name="NodeTreeVisualizer" type="PanelContainer" parent="." unique_id=652119870]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_nenhk")
+metadata/_custom_type_script = "uid://d2fmqwwjd2moi"

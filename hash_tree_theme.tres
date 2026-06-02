@@ -1,7 +1,18 @@
 [gd_resource type="Theme" format=3 uid="uid://b1tb0vqqyjilo"]
 
+[ext_resource type="FontFile" uid="uid://cesyoxd88ate" path="res://addons/hash_tree_visualizer/Excalifont-Regular.woff2" id="1_nygr4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nygr4"]
+content_margin_left = 50.0
+content_margin_top = 50.0
+content_margin_right = 50.0
+content_margin_bottom = 50.0
+bg_color = Color(0.92941177, 0.8980392, 0.8627451, 1)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_785uw"]
 
 [resource]
+Label/fonts/font = ExtResource("1_nygr4")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_nygr4")
 VSeparator/constants/separation = 128
 VSeparator/styles/separator = SubResource("StyleBoxEmpty_785uw")

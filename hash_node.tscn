@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://daem04r486sax" path="res://addons/hash_tree_visualizer/circle.png" id="1_k2fxc"]
 [ext_resource type="Script" uid="uid://67t782cqfq6r" path="res://addons/hash_tree_visualizer/hash_tree_node.gd" id="1_lqks7"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1uav3"]
+
 [node name="Control" type="HBoxContainer" unique_id=2086951809 node_paths=PackedStringArray("label")]
 offset_right = 220.0
 offset_bottom = 128.0
@@ -15,6 +17,11 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 texture = ExtResource("1_k2fxc")
+
+[node name="VSeparator" type="VSeparator" parent="." unique_id=735813083]
+layout_mode = 2
+theme_override_constants/separation = 12
+theme_override_styles/separator = SubResource("StyleBoxEmpty_1uav3")
 
 [node name="Label" type="Label" parent="." unique_id=1278315585]
 layout_mode = 2
