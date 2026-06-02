@@ -13,6 +13,10 @@ bg_color = Color(0.92941177, 0.8980392, 0.8627451, 1)
 
 [resource]
 Label/fonts/font = ExtResource("1_nygr4")
+NodeColors/colors/color_2d = Color(0.14509805, 0.48235294, 0.63529414, 1)
+NodeColors/colors/color_3d = Color(0.99607843, 0.5254902, 0.5254902, 1)
+NodeColors/colors/color_control = Color(0.21568628, 0.8235294, 0.50980395, 1)
+NodeColors/colors/color_node = Color(0.39607844, 0.6039216, 0.6313726, 1)
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_nygr4")
 VSeparator/constants/separation = 128
 VSeparator/styles/separator = SubResource("StyleBoxEmpty_785uw")

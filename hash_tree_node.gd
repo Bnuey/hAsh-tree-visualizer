@@ -4,10 +4,12 @@ const HashNode = preload("res://addons/hash_tree_visualizer/hash_tree_node.gd")
 const VISUAL_NODE_SCENE: PackedScene = preload("uid://blfuajfq0tuk3")
 const CIRCLE_TEXTURE: Texture = preload("uid://daem04r486sax")
 
-const color_node: Color = "#659AA1"
-const COLOR_3D: Color = "#fe8686"
-const COLOR_2D: Color = "#257BA2"
-const COLOR_CONTROL: Color = "#37d282"
+const THEME: Theme = preload("uid://b1tb0vqqyjilo")
+
+var COLOR_2D: Color = THEME.get_color("color_2d", "NodeColors")
+var COLOR_3D: Color = THEME.get_color("color_3d", "NodeColors")
+var color_node: Color = THEME.get_color("color_node", "NodeColors")
+var COLOR_CONTROL: Color = THEME.get_color("color_control", "NodeColors")
 
 
 
