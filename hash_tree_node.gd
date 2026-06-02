@@ -1,18 +1,20 @@
-class_name hAsh_Node extends HBoxContainer
+extends HBoxContainer
 
+const HashNode = preload("res://addons/hash_tree_visualizer/hash_tree_node.gd")
 const VISUAL_NODE_SCENE: PackedScene = preload("uid://blfuajfq0tuk3")
+const CIRCLE_TEXTURE: Texture = preload("uid://daem04r486sax")
 
 const color_node: Color = Color.WHITE
 const COLOR_3D: Color = "#FF5555FF"
 const COLOR_2D: Color = "#6393FFFF"
 const COLOR_CONTROL: Color = "#6AFF7CFF"
 
-const CIRCLE_TEXTURE: Texture = preload("uid://daem04r486sax")
+
 
 @export var label: Label
 
-static func new_visual(node: Node, depth: int) -> hAsh_Node:
-	var instance := VISUAL_NODE_SCENE.instantiate()	 as hAsh_Node
+static func new_visual(node: Node, depth: int) -> HashNode:
+	var instance := VISUAL_NODE_SCENE.instantiate() as HashNode
 	for i in depth:
 		var vsep := VSeparator.new()
 		instance.add_child(vsep)
